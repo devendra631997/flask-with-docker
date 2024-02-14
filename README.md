@@ -25,4 +25,4 @@ docker ps -ls
 
 
 ### To run with guinocorn 
-flask-with-docker % docker run -dp 5006:5000 -w /app -v "$(pwd):/app" flask_image sh -c "flask run --host 0.0.0.0"
+docker run -dp 5006:5000 -w /app -v "$(pwd):/app" flask_image sh -c "flask run --host 0.0.0.0"
